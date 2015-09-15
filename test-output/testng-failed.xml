@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GmailScript Automation Test]">
+  <test name="Send Receive Email Test(failed)">
+    <classes>
+      <class name="testcases.SREmailTestCase">
+        <methods>
+          <include name="SendReceiveEmail"/>
+        </methods>
+      </class> <!-- testcases.SREmailTestCase -->
+      <class name="testcases.SignOutTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testcases.SignOutTestCase -->
+    </classes>
+  </test> <!-- Send Receive Email Test(failed) -->
+</suite> <!-- Failed suite [GmailScript Automation Test] -->

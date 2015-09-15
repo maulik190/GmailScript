@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="GmailScript Automation Test" duration-ms="20049" started-at="2015-09-10T22:10:20Z" finished-at="2015-09-10T22:10:40Z">
+    <groups>
+    </groups>
+    <test name="Signin Test" duration-ms="9779" started-at="2015-09-10T22:10:20Z" finished-at="2015-09-10T22:10:30Z">
+      <class name="testcases.SigninTestCase">
+        <test-method status="PASS" signature="loginTest(java.lang.String)[pri:0, instance:testcases.SigninTestCase@10d69502]" name="loginTest" duration-ms="9761" started-at="2015-09-10T18:10:20Z" data-provider="getData" finished-at="2015-09-10T18:10:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maulik190@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- testcases.SigninTestCase -->
+    </test> <!-- Signin Test -->
+    <test name="Send Receive Email Test" duration-ms="8139" started-at="2015-09-10T22:10:30Z" finished-at="2015-09-10T22:10:38Z">
+      <class name="testcases.SREmailTestCase">
+        <test-method status="PASS" signature="SendReceiveEmail()[pri:0, instance:testcases.SREmailTestCase@1f4aed2c]" name="SendReceiveEmail" duration-ms="8136" started-at="2015-09-10T18:10:30Z" finished-at="2015-09-10T18:10:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SendReceiveEmail -->
+      </class> <!-- testcases.SREmailTestCase -->
+    </test> <!-- Send Receive Email Test -->
+    <test name="SignOut Test" duration-ms="2101" started-at="2015-09-10T22:10:38Z" finished-at="2015-09-10T22:10:40Z">
+      <class name="testcases.SignOutTestCase">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.SignOutTestCase@16adc7c8]" name="setUp" is-config="true" duration-ms="6337" started-at="2015-09-10T18:10:13Z" finished-at="2015-09-10T18:10:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SignOut(java.lang.String)[pri:0, instance:testcases.SignOutTestCase@16adc7c8]" name="SignOut" duration-ms="2097" started-at="2015-09-10T18:10:38Z" data-provider="getData" finished-at="2015-09-10T18:10:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maulik190@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignOut -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testcases.SignOutTestCase@16adc7c8]" name="tearDown" is-config="true" duration-ms="494" started-at="2015-09-10T18:10:40Z" finished-at="2015-09-10T18:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.SignOutTestCase -->
+    </test> <!-- SignOut Test -->
+  </suite> <!-- GmailScript Automation Test -->
+</testng-results>
