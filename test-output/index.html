@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-GmailScript_Automation_Test">
-              <span class="suite-name border-passed">GmailScript Automation Test</span>
+              <span class="suite-name border-failed">GmailScript Automation Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -53,7 +53,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-GmailScript_Automation_Test">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">6 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-GmailScript_Automation_Test" class="hide-methods failed suite-GmailScript_Automation_Test"> (hide)</a> <!-- hide-methods failed suite-GmailScript_Automation_Test -->
+                      <a href="#" panel-name="suite-GmailScript_Automation_Test" class="show-methods failed suite-GmailScript_Automation_Test"> (show)</a> <!-- show-methods failed suite-GmailScript_Automation_Test -->
+                    </span>
+                    <div class="method-list-content failed suite-GmailScript_Automation_Test">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GmailScript_Automation_Test" title="testcases.TrashTestCase" hash-for-method="trashEmail">trashEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-GmailScript_Automation_Test -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -111,7 +125,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GmailScript_Automation_Test" title="testcases.DraftTestCase" hash-for-method="draftEmail">draftEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-GmailScript_Automation_Test" title="testcases.SigninTestCase" hash-for-method="loginTest(maulik190@gmail.com)">loginTest(maulik190@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-GmailScript_Automation_Test" title="testcases.LabelTestCase" hash-for-method="moveToLabel">moveToLabel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-GmailScript_Automation_Test -->
@@ -126,6 +150,74 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-GmailScript_Automation_Test" class="panel GmailScript_Automation_Test">
+          <div class="suite-GmailScript_Automation_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TrashTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="trashEmail">
+                  </a> <!-- trashEmail -->
+                  <span class="method-name">trashEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 20.22 seconds
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 02:56:46&apos;
+System info: host: &apos;Maulik-PC&apos;, ip: &apos;10.20.0.31&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: f3b8e123-9799-447d-b574-a5f3a8cd5171
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=40.0.3}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:273)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at testcases.TrashTestCase.trashEmail(TrashTestCase.java:39)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.47.1&apos;, revision: &apos;411b314&apos;, time: &apos;2015-07-30 02:56:46&apos;
+System info: host: &apos;Maulik-PC&apos;, ip: &apos;10.20.0.31&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/Maulik/AppData/Local/Temp/anonymous6545545655678520430webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9982)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Maulik/AppData/Local/Temp/anonymous6545545655678520430webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12626)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Maulik/AppData/Local/Temp/anonymous6545545655678520430webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/Maulik/AppData/Local/Temp/anonymous6545545655678520430webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GmailScript_Automation_Test-class-failed -->
+          <div class="suite-GmailScript_Automation_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.DraftTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="draftEmail">
+                  </a> <!-- draftEmail -->
+                  <span class="method-name">draftEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GmailScript_Automation_Test-class-passed -->
+          <div class="suite-GmailScript_Automation_Test-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.LabelTestCase</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="moveToLabel">
+                  </a> <!-- moveToLabel -->
+                  <span class="method-name">moveToLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-GmailScript_Automation_Test-class-passed -->
           <div class="suite-GmailScript_Automation_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -193,6 +285,21 @@
       &lt;class name=&quot;testcases.SREmailTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Send Receive Email Test --&gt;
+  &lt;test name=&quot;Draft Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.DraftTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Draft Test --&gt;
+  &lt;test name=&quot;Label Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.LabelTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Label Test --&gt;
+  &lt;test name=&quot;Trash Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TrashTestCase&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Trash Test --&gt;
   &lt;test name=&quot;SignOut Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.SignOutTestCase&quot;/&gt;
@@ -213,6 +320,15 @@
               </li>
               <li>
                 <span class="test-name">Send Receive Email Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Draft Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Label Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Trash Test (1 class)</span>
               </li>
               <li>
                 <span class="test-name">SignOut Test (1 class)</span>
@@ -241,24 +357,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginTest')
-data.setCell(0, 2, 'testcases.SigninTestCase')
-data.setCell(0, 3, 9761);
+data.setCell(0, 1, 'trashEmail')
+data.setCell(0, 2, 'testcases.TrashTestCase')
+data.setCell(0, 3, 21198);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SendReceiveEmail')
-data.setCell(1, 2, 'testcases.SREmailTestCase')
-data.setCell(1, 3, 8136);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'testcases.SigninTestCase')
+data.setCell(1, 3, 8042);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SignOut')
-data.setCell(2, 2, 'testcases.SignOutTestCase')
-data.setCell(2, 3, 2097);
+data.setCell(2, 1, 'SendReceiveEmail')
+data.setCell(2, 2, 'testcases.SREmailTestCase')
+data.setCell(2, 3, 6723);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'draftEmail')
+data.setCell(3, 2, 'testcases.DraftTestCase')
+data.setCell(3, 3, 3647);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'SignOut')
+data.setCell(4, 2, 'testcases.SignOutTestCase')
+data.setCell(4, 3, 2304);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'moveToLabel')
+data.setCell(5, 2, 'testcases.LabelTestCase')
+data.setCell(5, 3, 2142);
 window.suiteTableData['GmailScript_Automation_Test']= { tableData: data, tableDiv: 'times-div-GmailScript_Automation_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-GmailScript_Automation_Test">
               </div> <!-- times-div-GmailScript_Automation_Test -->
             </div> <!-- times-div -->
@@ -294,25 +422,48 @@ return data;
               <div class="chronological-class-name">testcases.SigninTestCase</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginTest(maulik190@gmail.com)</span>
-                <span class="method-start">6353 ms</span>
+                <span class="method-start">6901 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.SREmailTestCase</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">SendReceiveEmail</span>
-                <span class="method-start">16140 ms</span>
+                <span class="method-start">14974 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.DraftTestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">draftEmail</span>
+                <span class="method-start">21706 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.LabelTestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">moveToLabel</span>
+                <span class="method-start">25380 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TrashTestCase</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">trashEmail</span>
+                <span class="method-start">27529 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.SignOutTestCase</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">SignOut(maulik190@gmail.com)</span>
-                <span class="method-start">24287 ms</span>
+                <span class="method-start">48752 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26396 ms</span>
+                <span class="method-start">51062 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

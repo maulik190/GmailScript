@@ -16,6 +16,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -36,6 +37,7 @@ public class TestBase {
 	public Connection con;
 	public FileReader fr;
 	public BufferedReader filereader;
+	public static WebDriverWait wait;
 	
 	public static CommonUtils cu;
 	
@@ -51,6 +53,7 @@ public class TestBase {
 		 driver.get("http://gmail.com");
 		 driver.manage().window().maximize();
 		 driver.manage().timeouts().implicitlyWait(20L, TimeUnit.SECONDS);
+		 wait = new WebDriverWait(driver,60);
 		 cu = new CommonUtils();
 		 
 			
@@ -61,7 +64,7 @@ public class TestBase {
 	@AfterSuite
 	public void tearDown()
 	{
-		driver.quit();
+		//driver.quit();
 	}
 
 }

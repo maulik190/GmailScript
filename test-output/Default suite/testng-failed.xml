@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.SREmailTestCase">
+      <class name="testcases.DraftTestCase">
         <methods>
           <include name="tearDown"/>
-          <include name="SendReceiveEmail" invocation-numbers="0"/>
+          <include name="draftEmail"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testcases.SREmailTestCase -->
+      </class> <!-- testcases.DraftTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

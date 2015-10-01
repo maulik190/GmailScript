@@ -14,6 +14,24 @@
     </classes>
   </test> <!-- Test -->
   
+  <test name="Draft Test">
+    <classes>
+        <class name="testcases.DraftTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Label Test">
+    <classes>
+        <class name="testcases.LabelTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Trash Test">
+    <classes>
+        <class name="testcases.TrashTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  
   <test name="SignOut Test">
     <classes>
         <class name="testcases.SignOutTestCase"/>

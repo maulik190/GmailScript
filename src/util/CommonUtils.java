@@ -28,13 +28,16 @@ public class CommonUtils extends TestBase {
 		nextButton.click();
 		
 		WebElement passwordTextbox= driver.findElement(By.xpath("//*[@id='Passwd']"));
-		passwordTextbox.sendKeys(decode(password));
+		//passwordTextbox.sendKeys(decode(password));
+		passwordTextbox.sendKeys(password);
 		//OTQyNjk4MTM5OA==
 		
 		WebElement signinButton = driver.findElement(By.xpath("//*[@id='signIn']"));
 		signinButton.click();
 		
-	}*/
+	}
+	*/
+	
 	
 	public static String decode(String encodedpassword)
 	{

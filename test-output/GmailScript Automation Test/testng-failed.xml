@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [GmailScript Automation Test]">
-  <test name="Send Receive Email Test(failed)">
+  <test name="Trash Test(failed)">
     <classes>
-      <class name="testcases.SREmailTestCase">
+      <class name="testcases.TrashTestCase">
         <methods>
-          <include name="SendReceiveEmail"/>
+          <include name="trashEmail"/>
         </methods>
-      </class> <!-- testcases.SREmailTestCase -->
+      </class> <!-- testcases.TrashTestCase -->
       <class name="testcases.SignOutTestCase">
         <methods>
           <include name="tearDown"/>
@@ -15,5 +15,5 @@
         </methods>
       </class> <!-- testcases.SignOutTestCase -->
     </classes>
-  </test> <!-- Send Receive Email Test(failed) -->
+  </test> <!-- Trash Test(failed) -->
 </suite> <!-- Failed suite [GmailScript Automation Test] -->
